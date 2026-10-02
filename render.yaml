@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: sitemaker-bf
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: FREE_CREATIONS
+        value: 2
+      - key: SITE_CREATION_PRICE
+        value: 500
+      - key: PUBLICATION_CREATION_PRICE
+        value: 250
+      - key: SITE_CREDITS_PER_PACKAGE
+        value: 2
+      - key: PUBLICATION_CREDITS_PER_PACKAGE
+        value: 3
